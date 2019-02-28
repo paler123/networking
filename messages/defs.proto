@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+package messages;
+
+message Person {
+  required string node= 1;
+  required string payload= 2;
+}
