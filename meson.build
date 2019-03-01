@@ -36,7 +36,7 @@ catch2_dep = dependency('catch2', fallback : ['catch2', 'catch2_dep'])
 zmq_dep = dependency('cppzmq')
 
 protoc = find_program('protoc')
-dep = dependency('protobuf')
+proto_dep = dependency('protobuf')
 
 subdir('messages') # protobuf interfaces
 subdir('tools')

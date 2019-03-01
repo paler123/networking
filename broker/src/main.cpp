@@ -3,6 +3,8 @@
 //  Binds REP socket to tcp://*:5555
 //  Expects "Hello" from client, replies with "World"
 //
+
+#include "defs.pb.h"
 #include <chrono>
 #include <iostream>
 #include <string>
@@ -33,5 +35,4 @@ int main()
     std::memcpy(reply.data(), "World", 5);
     socket.send(reply);
   }
-  return 0;
 }

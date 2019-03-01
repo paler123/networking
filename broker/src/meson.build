@@ -21,5 +21,6 @@ broker_dep = declare_dependency(
 broker_exe = executable(
   'broker_exe',
   'main.cpp',
-  dependencies : [broker_dep, zmq_dep]
+  dependencies : [broker_dep, zmq_dep, proto_interface],
+  cpp_args : ['-std=c++17']
 )
